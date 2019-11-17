@@ -1,0 +1,61 @@
+﻿@page "/fetchperson"
+
+@using BlazorTestApp.Domain.Models
+@using BlazorTestApp.Data.Service
+
+@inject IPersonService _personService
+
+
+
+<div class="card card-header">
+    <h2>Person Test Page</h2>    
+</div>
+<hr />
+<p>
+    <a href="/addperson" class="btn btn-primary">Create New</a>
+</p>
+
+
+@if (people == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Birthday</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in people)
+                {
+                <tr>
+                    <td>@person.Name</td>
+                    <td>@person.Age</td>
+                    <td>@person.Gender</td>
+                    <td>@person.BirthDate.ToShortDateString()</td>
+                    <td>
+                        <a class="btn btn-info" href='/editperson/@person.Id'>Edit</a>  |
+                        <a class="btn btn-danger" href='/deleteperson/@person.Id'>Delete</a>
+                    </td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+@code {
+    IEnumerable<Person> people;
+
+    protected override async Task OnInitializedAsync()
+    {
+        people = await _personService.GetPeopleAsync();
+    }
+}

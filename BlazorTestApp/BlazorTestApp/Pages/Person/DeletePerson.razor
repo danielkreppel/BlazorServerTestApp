@@ -1,0 +1,62 @@
+﻿@page "/deleteperson/{personID}"
+
+@using BlazorTestApp.Domain.Models
+@using BlazorTestApp.Data.Service
+
+@inject NavigationManager NavigationManager
+
+@inject IPersonService _personService
+
+<div class="card card-header">
+    <h2>Delete</h2>
+    <h3>Are you sure you want to delete person: @person.Name</h3>
+</div>
+<hr />
+<br />
+<div class="col-md-4">
+    <table class="table border">
+        <tr>
+            <td>Name</td>
+            <td>@person.Name</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>@person.Gender</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>@person.Age</td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td>@person.BirthDate.ToShortDateString()</td>
+        </tr>
+    </table>
+    <div class="form-group">
+        <a href="#" class="btn btn-success" @onclick="@(async () => await RemovePerson())"> Delete </a>
+        <a href="/fetchperson" class="btn btn-danger"> Cancel </a>
+    </div>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public string personID { get; set; }
+
+    Person person = new Person();
+
+    protected override async Task OnInitializedAsync()
+    {
+        person = await _personService.GetPersonAsync(Convert.ToInt32(personID));
+    }
+
+
+    protected async Task RemovePerson()
+    {
+        await _personService.DeletePersonAsync(person);
+        NavigationManager.NavigateTo("/fetchperson");
+    }
+    
+}
+

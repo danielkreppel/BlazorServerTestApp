@@ -1,0 +1,8 @@
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\bin\Debug\netcoreapp3.0\BlazorTestApp.Domain.deps.json
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\bin\Debug\netcoreapp3.0\BlazorTestApp.Domain.dll
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\bin\Debug\netcoreapp3.0\BlazorTestApp.Domain.pdb
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\obj\Debug\netcoreapp3.0\BlazorTestApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\obj\Debug\netcoreapp3.0\BlazorTestApp.Domain.AssemblyInfo.cs
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\obj\Debug\netcoreapp3.0\BlazorTestApp.Domain.dll
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\obj\Debug\netcoreapp3.0\BlazorTestApp.Domain.pdb
+C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Domain\obj\Debug\netcoreapp3.0\BlazorTestApp.Domain.csprojAssemblyReference.cache

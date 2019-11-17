@@ -1,0 +1,58 @@
+﻿@page "/addperson"
+
+@using BlazorTestApp.Domain.Models
+@using BlazorTestApp.Data.Service
+
+@inject NavigationManager NavigationManager
+
+@inject IPersonService _personService
+
+
+<div class="card card-header">
+    <h2>Create Person</h2>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="Name" class="control-label">Name</label>
+                <input for="Name" class="form-control" @bind="@person.Name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label">Gender</label>
+                <select asp-for="Gender" class="form-control" @bind="@person.Gender">
+                    <option value="">-- Select Gender --</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label">Age</label>
+                <input asp-for="Age" class="form-control" @bind="@person.Age" />
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label">Birthday</label>
+                <input asp-for="BirthDate" type="date" class="form-control" @bind="@person.BirthDate" format-value="dd.MM.yyyy" />
+            </div>
+            <div class="form-group">
+                <a href="#" class="btn btn-success" @onclick="@(async () => await CreatePerson())">Save</a>
+                <a href="/fetchperson" class="btn btn-danger">Cancel</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+@code {
+    Person person = new Person();
+
+    protected async Task CreatePerson()
+    {
+        await _personService.CreatePersonAsync(person);
+        NavigationManager.NavigateTo("/fetchperson");
+    }
+
+}
+
