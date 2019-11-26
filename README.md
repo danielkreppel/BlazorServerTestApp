@@ -3,5 +3,6 @@ This is a simple CRUD test application using:
 
 - Blazor Server
 - .Net Core 3.0 SDK
-- Dapper.Contrib
-- SQL Server
+- Dapper.Contrib (For the database operations)
+- SQL Server 2016 Developer
+- SqlTableDependency (To listen to database changes and refresh the clients connected through events triggered from the Service layer)
