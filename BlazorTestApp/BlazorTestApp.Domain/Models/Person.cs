@@ -22,6 +22,8 @@ namespace BlazorTestApp.Domain.Models
         public string Gender { get; set; }
 
         [Required]
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; set; } = DateTime.Now.AddYears(-38);
+
+        public DateTime DateCreated { get; set; }
     }
 }

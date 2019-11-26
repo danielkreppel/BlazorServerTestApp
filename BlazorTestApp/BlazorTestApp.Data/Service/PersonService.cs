@@ -10,10 +10,12 @@ namespace BlazorTestApp.Data.Service
     public class PersonService : IPersonService
     {
         private IPersonRepository _personRepository;
+        public event Action RefreshPerson;
 
         public PersonService(IPersonRepository personRepository)
         {
             _personRepository = personRepository;
+            _personRepository.personChangedEvent += (s, e) => RefreshPerson.Invoke();
         }
 
         public async Task<IEnumerable<Person>> GetPeopleAsync()

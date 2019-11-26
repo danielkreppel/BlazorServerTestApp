@@ -9,6 +9,8 @@ namespace BlazorTestApp.Data.Service
 {
     public interface IPersonService
     {
+
+        event Action RefreshPerson;
         Task<IEnumerable<Person>> GetPeopleAsync();
         
         Task<Person> GetPersonAsync(int ID);

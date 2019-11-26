@@ -5,16 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using BlazorTestApp.Domain.Models;
 using Dapper.Contrib.Extensions;
+using TableDependency.SqlClient;
+using TableDependency.SqlClient.Base.Delegates;
+using TableDependency.SqlClient.Base.EventArgs;
 
 namespace BlazorTestApp.Data.Repository
 {
     public class PersonRepository : IPersonRepository
     {
         private string _ConnString;
+        
+        public event ChangedEventHandler<Person> personChangedEvent;
+
+        private SqlTableDependency<Person> _sqlTableDependency;
 
         public PersonRepository(string ConnString)
         {
             _ConnString = ConnString;
+            _sqlTableDependency = new SqlTableDependency<Person>(_ConnString, "Person");
+
+            SetSqlDependency();
+        }
+
+        private void SetSqlDependency()
+        {
+            _sqlTableDependency.OnChanged += (s, e) => personChangedEvent.Invoke(s, e);
+            _sqlTableDependency.Start();
         }
 
         public async Task<IEnumerable<Person>> GetPeopleAsync()
@@ -37,6 +53,7 @@ namespace BlazorTestApp.Data.Repository
         {
             using (var conn = new SqlConnection(_ConnString))
             {
+                person.DateCreated = DateTime.Now;
                 return await conn.InsertAsync<Person>(person);
             }
         }

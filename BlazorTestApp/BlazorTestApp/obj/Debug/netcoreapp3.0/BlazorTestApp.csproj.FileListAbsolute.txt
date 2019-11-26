@@ -302,3 +302,4 @@ C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorT
 C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp\obj\Debug\netcoreapp3.0\BlazorTestApp.csproj.CopyComplete
 C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp\obj\Debug\netcoreapp3.0\BlazorTestApp.dll
 C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp\obj\Debug\netcoreapp3.0\BlazorTestApp.pdb
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp\bin\Debug\netcoreapp3.0\TableDependency.SqlClient.dll

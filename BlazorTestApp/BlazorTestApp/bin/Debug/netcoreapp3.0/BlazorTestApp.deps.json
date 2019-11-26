@@ -1124,6 +1124,21 @@
           }
         }
       },
+      "SqlTableDependency/8.5.4": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.6.0",
+          "System.Data.SqlClient": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/TableDependency.SqlClient.dll": {
+            "assemblyVersion": "8.5.4.0",
+            "fileVersion": "8.5.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/TableDependency.SqlClient.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -2088,6 +2103,7 @@
           "Dapper": "2.0.30",
           "Dapper.Contrib": "2.0.30",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
+          "SqlTableDependency": "8.5.4",
           "System.Data.SqlClient": "4.7.0"
         },
         "runtime": {
@@ -4308,6 +4324,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SqlTableDependency/8.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SAvzuCURjt/7LUfaryT6CR4rtp7aMwGv50eFAcsraBM5GW2FCw9G2Xsv94IV/ZrW7y6VO7wJ1fbfcNi3Q1z2RQ==",
+      "path": "sqltabledependency/8.5.4",
+      "hashPath": "sqltabledependency.8.5.4.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

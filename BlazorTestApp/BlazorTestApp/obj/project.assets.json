@@ -1071,6 +1071,19 @@
           }
         }
       },
+      "SqlTableDependency/8.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.Data.SqlClient": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/TableDependency.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/TableDependency.SqlClient.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2620,6 +2633,7 @@
           "Dapper": "2.0.30",
           "Dapper.Contrib": "2.0.30",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
+          "SqlTableDependency": "8.5.4",
           "System.Data.SqlClient": "4.7.0"
         },
         "compile": {
@@ -4216,6 +4230,20 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SqlTableDependency/8.5.4": {
+      "sha512": "SAvzuCURjt/7LUfaryT6CR4rtp7aMwGv50eFAcsraBM5GW2FCw9G2Xsv94IV/ZrW7y6VO7wJ1fbfcNi3Q1z2RQ==",
+      "type": "package",
+      "path": "sqltabledependency/8.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/TableDependency.SqlClient.dll",
+        "lib/netcoreapp2.0/TableDependency.SqlClient.dll",
+        "lib/netstandard2.0/TableDependency.SqlClient.dll",
+        "sqltabledependency.8.5.4.nupkg.sha512",
+        "sqltabledependency.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {

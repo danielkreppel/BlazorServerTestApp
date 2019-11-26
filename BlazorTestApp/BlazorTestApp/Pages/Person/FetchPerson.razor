@@ -4,11 +4,11 @@
 @using BlazorTestApp.Data.Service
 
 @inject IPersonService _personService
-
+@inject IJSRuntime jsRuntime
 
 
 <div class="card card-header">
-    <h2>Person Test Page</h2>    
+    <h2>Person Test Page</h2>
 </div>
 <hr />
 <p>
@@ -17,24 +17,24 @@
 
 
 @if (people == null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Birthday</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var person in people)
-                {
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in people)
+            {
                 <tr>
                     <td>@person.Name</td>
                     <td>@person.Age</td>
@@ -46,10 +46,12 @@
                     </td>
 
                 </tr>
-                }
-            </tbody>
-        </table>
-    }
+            }
+        </tbody>
+    </table>
+}
+
+
 
 @code {
     IEnumerable<Person> people;
@@ -57,5 +59,15 @@
     protected override async Task OnInitializedAsync()
     {
         people = await _personService.GetPeopleAsync();
+
+        _personService.RefreshPerson += () => InvokeAsync(() => RefreshPeopleAsync());
     }
+
+    private async Task RefreshPeopleAsync()
+    {
+        people = await _personService.GetPeopleAsync();
+        StateHasChanged();
+        
+    }
+
 }

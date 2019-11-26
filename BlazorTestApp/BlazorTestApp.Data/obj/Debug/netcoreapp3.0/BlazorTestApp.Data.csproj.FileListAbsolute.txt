@@ -9,3 +9,14 @@ C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorT
 C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.csproj.CopyComplete
 C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.dll
 C:\Users\Pc\Documents\Desenvolvimento\Blazor\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.pdb
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\bin\Debug\netcoreapp3.0\BlazorTestApp.Data.deps.json
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\bin\Debug\netcoreapp3.0\BlazorTestApp.Data.dll
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\bin\Debug\netcoreapp3.0\BlazorTestApp.Data.pdb
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\bin\Debug\netcoreapp3.0\BlazorTestApp.Domain.dll
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\bin\Debug\netcoreapp3.0\BlazorTestApp.Domain.pdb
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.csprojAssemblyReference.cache
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.AssemblyInfo.cs
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.csproj.CopyComplete
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.dll
+C:\Users\Pc\Documents\Desenvolvimento\GitHub\BlazorTestApp\BlazorTestApp\BlazorTestApp.Data\obj\Debug\netcoreapp3.0\BlazorTestApp.Data.pdb

@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using BlazorTestApp.Data;
 using BlazorTestApp.Data.Repository;
 using BlazorTestApp.Data.Service;
+using System.Data.SqlClient;
 
 namespace BlazorTestApp
 {

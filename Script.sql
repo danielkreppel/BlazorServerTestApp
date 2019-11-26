@@ -8,8 +8,9 @@ Create table Person(
     Name varchar(20) NOT NULL,        
     Age varchar(20) NOT NULL,        
     BirthDate DateTime NOT NULL,        
-    Gender varchar(6) NOT NULL        
+    Gender varchar(6) NOT NULL,
+	DateCreated DateTime NOT NULL DEFAULT GETDATE()   
 )
 
-
+ALTER DATABASE BlazorTestDB SET ENABLE_BROKER;
 
